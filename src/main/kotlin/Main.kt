@@ -43,7 +43,7 @@ fun translateChoice(choice: Int): String {
 fun determineWinner(player: Int, computer: Int): String {
     return when {
         player == computer -> "Ничья! Переиграйте еще раз."
-        (player == 1 && computer == 3) || (player == 2 && computer == 1) || (player == 3 && computer == 2) ->
+        (player == 1 && computer == 2) || (player == 2 && computer == 3) || (player == 3 && computer == 1) ->
             "Вы победили! Поздравляю!"
         else -> "Вы проиграли. Попробуйте еще раз."
     }
